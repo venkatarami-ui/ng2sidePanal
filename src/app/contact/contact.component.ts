@@ -8,8 +8,14 @@ import CustomValidators from '../forms/CustomValidators';
   styleUrls: ['./contact-component.css']
 })
 export class ContactComponent implements OnInit {
+  contactus:string;
   contactForm: FormGroup;
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder) {
+    this.contactus="Contact Form";
+  }
+
+
+
 
   ngOnInit() {
     this.contactForm = this.formBuilder.group({
@@ -21,4 +27,7 @@ export class ContactComponent implements OnInit {
   submitForm(): void {
     console.log(this.contactForm);
   }
+
+
+
 }

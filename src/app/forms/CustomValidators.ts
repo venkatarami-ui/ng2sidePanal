@@ -1,6 +1,8 @@
 import {FormControl} from '@angular/forms';
 
 export default class CustomValidators {
+
+  contact: string;
   /**
    * sample from http://blog.thoughtram.io/angular/2016/03/14/custom-validators-in-angular-2.html
    */
@@ -13,4 +15,9 @@ export default class CustomValidators {
       }
     };
   }
+
+   
+
+
+
 }

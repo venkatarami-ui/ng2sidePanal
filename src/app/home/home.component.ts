@@ -6,4 +6,12 @@ import {Component} from '@angular/core';
   templateUrl: './home.component.html'
 })
 export class HomeComponent {
+
+    home: string;
+     
+  constructor() {
+    this.home="Dashboard";
+  }
+
+
 }
